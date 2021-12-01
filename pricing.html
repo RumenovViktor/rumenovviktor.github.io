@@ -1,0 +1,84 @@
+---
+title: Pricing
+heading: Pricing
+description: This is what we offer using your own Amazon SES account
+pricing_table:
+  - name: Free
+    color: "#8e8e8e"
+    features:
+      - text: Up to 2000 subscribers
+        highlight: true
+      - text: Unlimited emails
+        highlight: true
+      - text: Unlimited campaigns
+        highlight: true
+      - text: Unlimited automatic emails
+        highlight: true
+      - text: Unlimited email templates
+        highlight: true
+  - name: Professional
+    color: "#009be5"
+    pricingPlaceholder: true
+    features:
+      - text: Connect your Amazon SES account
+        highlight: true
+      - text: Unlimited emails
+        highlight: true
+      - text: Unlimited campaigns
+        highlight: true
+      - text: Unlimited automatic emails
+        highlight: true
+      - text: Unlimited email templates
+        highlight: true
+---
+
+<div class="plans">
+	{% for plan in page.pricing_table %}
+		<ul class="plan">
+			<li style="background: {{ plan.color }}">
+				<h3>{{ plan.name }}</h3>
+			</li>
+			{% if plan.pricingPlaceholder %}
+			<div class="row d-flex justify-content-center">
+				<div class="col-3 text-center" style="background-color: #fafafa; border-radius: 10000px;margin-top: 15px;">
+					<h1 class="subtext" id="price-placeholder">$20</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					<label class="subtext">Subscribers</label>
+					<h5 class="subtext" id="subscribers-count">5000</h5>
+				</div>
+				<div class="col-6">
+					<label class="subtext">Emails</label>
+					<h5 class="subtext">Unlimited</h5>
+				</div>
+			</div>
+			<div class="row d-flex justify-content-center">
+				<div class="col-11">
+					<input id="subscribers-range" type="range" id="vol" name="vol" min="5000" max="500000" step="5000" value="5000">
+				</div>
+			</div>
+			{% endif %}
+			{% for feature in plan.features %}
+				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}</li>
+			{% endfor %}
+			
+			{% if plan.call_to_action %}
+				<li class="pricing-cta"><div class="button"><a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
+			{% endif %}
+		</ul>
+	{% endfor %}
+</div>
+
+{% if page.faq %}
+	<h2>Pricing FAQ</h2>
+	<dl class="faq">
+		{% for item in page.faq %}
+			<div>
+				<dt>{{ item.question }}</dt>
+				<dd>{{ item.answer }}</dd>
+			</div>
+		{% endfor %}
+	</dl>
+{% endif %}

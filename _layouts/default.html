@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+		<!-- Begin Jekyll SEO tag v2.7.1 -->
+		<title>Email Marketing Platform | MailGen</title>
+		<meta name="generator" content="Jekyll v4.2.0" />
+		<meta property="og:title" content="Email Marketing Platform" />
+		<meta property="og:locale" content="en_US" />
+		<meta name="description" content="Email marketing made easy. Send emails, track opens and clicks. Run email campaigns." />
+		<meta property="og:description" content="Email marketing made easy. Send emails, track opens and clicks. Run email campaigns." />
+		<link rel="canonical" href="https://mailgen.omega23.net/" />
+		<meta property="og:url" content="https://mailgen.omega23.net" />
+		<meta property="og:site_name" content="MailGen" />
+		<meta name="twitter:card" content="summary" />
+		<meta property="twitter:title" content="Email marketing made easy. Send emails, track opens and clicks. Run email campaigns." />
+		<script type="application/ld+json">
+			{"@type":"WebSite","headline":"TEmail marketing made easy. Send emails, track opens and clicks. Run email campaigns.","sameAs":["https://mailgen.omega23.net"],"url":"https://mailgen.omega23.net","publisher":{"@type":"Omega 23 Ltd.","logo":{"@type":"ImageObject","url":"https://mailgen.omega23.net/siteicon.png"}},"description":"Email marketing made easy. Send emails, track opens and clicks. Run email campaigns.","name":"MailGen","@context":"https://schema.org"}</script>
+
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap/css/bootstrap.css">
+		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/MailGen.png">
+
+		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+			<script>
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', '{{ site.google_analytics_key }}', 'auto');
+				ga('send', 'pageview');
+			</script>
+			<script async src='https://www.google-analytics.com/analytics.js'></script>
+		{% endif %}
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="company-name">
+					<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/MailGen.png" alt="MailGen logo" height="30px" /></a>
+					<span style="margin-top: 12px; position: absolute;">MailGen</span>
+				</div>
+				{% include navigation.html %}
+			</div>
+		</header>
+		{{ content }}
+		<footer>
+			<div class="container">
+				<div class="footer-columns">
+					{% for column in site.data.footer %}
+					<ul class="footer-links">
+						{% for link in column.links %}
+							<li><a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon }}-icon"{% endif %}>
+								{% if link.social_icon %}
+									{% include social-icon.html icon=link.social_icon %}
+								{% endif %}
+								{{ link.name }}</a></li>
+						{% endfor %}
+					</ul>
+					{% endfor %}
+				</div>
+				<p class="subtext support">Support: contact.omega23@gmail.com</p>
+<!--				<p class="copyright">&copy; {{ site.time | date: '%Y' }} Powered by Omega 23 Ltd. </p>-->
+				<p class="copyright">&copy; {{ site.time | date: '%Y' }} Omega 23 Ltd. • <a href="#">Terms</a> &amp; <a href="#">Privacy</a></p>
+			</div>
+		</footer>
+		<script>
+			document.getElementById("open-nav").onclick = function () {
+				document.body.classList.toggle("nav-open");
+				return false;
+			};
+		</script>
+		<script src="../css/bootstrap/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

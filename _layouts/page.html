@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="content">
+	<section class="page">
+		<div class="container {% if page.full_width %}max-container{% endif %}">
+			{% if page.heading %}
+				<h2>{{ page.heading }}</h2>
+			{% elsif page.title and page.layout != 'archive' %}
+				<h2>{{ page.title }}</h2>
+			{% endif %}
+			{% if page.description %}
+				<div class="text-center">
+					<p class="subtext">{{ page.description }}</p>
+				</div>
+			{% endif %}
+			{{ content }}
+		</div>
+	</section>
+</div>
+<script type="application/javascript">
+	var el = document.getElementById('subscribers-range')
+	el.addEventListener('change', function (e){
+		const val = e.target.value
+		const addNumber = 6;
+		let price = 20
+		let multiplier = new Number(val) / 5000;
+
+		if (multiplier !== 1){
+			price = 20 + (multiplier * addNumber)
+		}
+		
+		document.getElementById('price-placeholder').innerText = '$' + price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+		document.getElementById('subscribers-count').innerText = val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+	})
+</script>

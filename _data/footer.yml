@@ -1,0 +1,18 @@
+- links:
+  - name: Pricing
+    link: /pricing/
+  - name: Terms Of Use
+    link: /termsOfUse
+    new_window: true
+#  - name: Sign Up
+#    link: /
+#    new_window: true
+#- links:
+#  - name: Facebook
+#    link: https://facebook.com/mailgen/
+#    new_window: true
+#    social_icon: Facebook
+#  - name: RSS
+#    link: /feed.xml
+#    social_icon: RSS
+#    new_window: false

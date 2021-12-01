@@ -1,0 +1,65 @@
+.bottom-cta {
+	background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%);
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	padding: 100px 0;
+
+	h2 {
+		margin-bottom: 50px;
+	}
+}
+.faq-landing{
+	background: #f8f9fa;
+	div {
+		break-inside: avoid;
+		padding: 25px 0;
+	}
+}
+
+.testimonial{
+	margin: 0;
+	padding: 100px 0;
+
+	.testimonial-block {
+		max-width: 750px;
+		width: 98%;
+		margin: 0 auto;
+
+		@media #{$tablet} {
+			@include flexbox;
+
+			blockquote {
+				-webkit-flex: 1;
+				flex: 1;
+			}
+		}
+	}
+}
+
+.hero {
+	padding-top: 150px;
+}
+
+@media #{$desktop} {
+	.flex {
+		@include flexbox;
+		align-items: center;
+		flex-direction: row;
+
+		.text, .image {
+			-webkit-flex: 1;
+			flex: 1;
+			padding: 0 20px;
+		}
+	}
+
+	.content section:nth-child(even) .flex {
+		flex-direction: row-reverse;
+	}
+}
+
+.offerContainer{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
