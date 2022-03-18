@@ -17,38 +17,38 @@
 	}
 }
 
-header {
-	color: #fff;
-	padding: 20px 0;
-	background: $brand-color; /* Old browsers */
-	background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%) no-repeat $brand-color;
-
-	a {
-		color: #fff;
-		text-decoration: none;
-		z-index: 1;
-		position: relative;
-
-		&:hover {
-			text-decoration: none;
-		}
-	}
-
-	.company-name {
-		font-size: 1.7em;
-		line-height: 0;
-		position: relative;
-
-		a {
-			display: inline-block;
-		}
-
-		img {
-			display: block;
-			width: auto;
-		}
-	}
-}
+//header {
+//	color: #fff;
+//	padding: 20px 0;
+//	background: $brand-color; /* Old browsers */
+//	background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%) no-repeat $brand-color;
+//
+//	a {
+//		color: #fff;
+//		text-decoration: none;
+//		z-index: 1;
+//		position: relative;
+//
+//		&:hover {
+//			text-decoration: none;
+//		}
+//	}
+//
+//	.company-name {
+//		font-size: 1.7em;
+//		line-height: 0;
+//		position: relative;
+//
+//		a {
+//			display: inline-block;
+//		}
+//
+//		img {
+//			display: block;
+//			width: auto;
+//		}
+//	}
+//}
 
 .content {
 	background: #fff;
