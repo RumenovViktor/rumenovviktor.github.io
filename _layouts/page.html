@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="content">
+<div class="">
 	<section class="page">
 		<div class="container {% if page.full_width %}max-container{% endif %}">
 			{% if page.heading %}
@@ -19,18 +19,207 @@ layout: default
 	</section>
 </div>
 <script type="application/javascript">
-	var el = document.getElementById('subscribers-range')
+	let el = document.getElementById('number-of-subscribers-input')
+	const tiers = getTiers()
 	el.addEventListener('change', function (e){
-		const val = e.target.value
-		const addNumber = 6;
+		const subscribersCount = new Number(e.target.value)
+		const tiers = getTiers()
 		let price = 20
-		let multiplier = new Number(val) / 5000;
-
-		if (multiplier !== 1){
-			price = 20 + (multiplier * addNumber)
+		debugger
+		for (let i = 0; i < tiers.length - 1; i++){
+			let current = tiers[i];
+			let next = tiers[i + 1];
+			
+			if (subscribersCount > new Number(current.up_to) && subscribersCount <= new Number(next.up_to)){
+				price = tiers[i].flat_amount_decimal
+			}
 		}
 		
-		document.getElementById('price-placeholder').innerText = '$' + price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-		document.getElementById('subscribers-count').innerText = val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+		let pricePlaceholder = document.getElementById('price-placeholder');
+		
+		if (price.toString().length > 2){
+			pricePlaceholder.innerText = '$' + price.toString().substring(0, price.length - 2)	
+		}else if (subscribersCount > tiers[tiers.length - 2].up_to){
+			pricePlaceholder.innerText = 'Contact Us'
+		}else{
+			pricePlaceholder.innerText = '$' + price.toString()
+		}
 	})
+	
+	function getTiers(){
+		return [
+			{
+				"up_to": "5000",
+				"flat_amount_decimal": "2000"
+			},
+			{
+				"up_to": "10000",
+				"flat_amount_decimal": "3200"
+			},
+			{
+				"up_to": "15000",
+				"flat_amount_decimal": "3800"
+			},
+			{
+				"up_to": "20000",
+				"flat_amount_decimal": "4400"
+			},
+			{
+				"up_to": "25000",
+				"flat_amount_decimal": "5000"
+			},
+			{
+				"up_to": "30000",
+				"flat_amount_decimal": "5600"
+			},
+			{
+				"up_to": "35000",
+				"flat_amount_decimal": "6200"
+			},
+			{
+				"up_to": "40000",
+				"flat_amount_decimal": "6800"
+			},
+			{
+				"up_to": "45000",
+				"flat_amount_decimal": "7400"
+			},
+			{
+				"up_to": "50000",
+				"flat_amount_decimal": "8000"
+			},
+			{
+				"up_to": "55000",
+				"flat_amount_decimal": "8600"
+			},
+			{
+				"up_to": "60000",
+				"flat_amount_decimal": "9200"
+			},
+			{
+				"up_to": "65000",
+				"flat_amount_decimal": "9800"
+			},
+			{
+				"up_to": "70000",
+				"flat_amount_decimal": "10400"
+			},
+			{
+				"up_to": "85000",
+				"flat_amount_decimal": "11000"
+			},
+			{
+				"up_to": "100000",
+				"flat_amount_decimal": "12600"
+			},
+			{
+				"up_to": "115000",
+				"flat_amount_decimal": "14200"
+			},
+			{
+				"up_to": "130000",
+				"flat_amount_decimal": "15800"
+			},
+			{
+				"up_to": "145000",
+				"flat_amount_decimal": "17400"
+			},
+			{
+				"up_to": "160000",
+				"flat_amount_decimal": "19000"
+			},
+			{
+				"up_to": "175000",
+				"flat_amount_decimal": "20600"
+			},
+			{
+				"up_to": "190000",
+				"flat_amount_decimal": "22200"
+			},
+			{
+				"up_to": "205000",
+				"flat_amount_decimal": "23800"
+			},
+			{
+				"up_to": "220000",
+				"flat_amount_decimal": "25400"
+			},
+			{
+				"up_to": "235000",
+				"flat_amount_decimal": "27000"
+			},
+			{
+				"up_to": "250000",
+				"flat_amount_decimal": "28600"
+			},
+			{
+				"up_to": "265000",
+				"flat_amount_decimal": "30200"
+			},
+			{
+				"up_to": "280000",
+				"flat_amount_decimal": "31800"
+			},
+			{
+				"up_to": "295000",
+				"flat_amount_decimal": "33400"
+			},
+			{
+				"up_to": "310000",
+				"flat_amount_decimal": "35000"
+			},
+			{
+				"up_to": "325000",
+				"flat_amount_decimal": "36600"
+			},
+			{
+				"up_to": "340000",
+				"flat_amount_decimal": "38200"
+			},
+			{
+				"up_to": "355000",
+				"flat_amount_decimal": "39800"
+			},
+			{
+				"up_to": "370000",
+				"flat_amount_decimal": "41400"
+			},
+			{
+				"up_to": "385000",
+				"flat_amount_decimal": "43000"
+			},
+			{
+				"up_to": "400000",
+				"flat_amount_decimal": "44600"
+			},
+			{
+				"up_to": "415000",
+				"flat_amount_decimal": "46200"
+			},
+			{
+				"up_to": "430000",
+				"flat_amount_decimal": "47800"
+			},
+			{
+				"up_to": "445000",
+				"flat_amount_decimal": "49400"
+			},
+			{
+				"up_to": "460000",
+				"flat_amount_decimal": "51000"
+			},
+			{
+				"up_to": "475000",
+				"flat_amount_decimal": "52600"
+			},
+			{
+				"up_to": "500000",
+				"flat_amount_decimal": "55000"
+			},
+			{
+				"up_to": "inf",
+				"flat_amount_decimal": "55000"
+			}
+		]
+	}
 </script>

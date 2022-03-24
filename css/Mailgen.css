@@ -51,7 +51,7 @@
 
 .mailgen-section1__highlights1.layout {
   position: absolute;
-  top: 46px;
+  top: 40px;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -66,7 +66,7 @@
 
 .mailgen-section1__highlights1.layout1 {
   position: absolute;
-  top: 46px;
+  top: 40px;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -74,13 +74,13 @@
   left: 0px;
   right: 0px;
   width: 3.44%;
-  margin: 0px 69.71% 0px 26.85%;
+  margin: 0px 69.71% 0px 21.85%;
   text-decoration: none;
 }
 
 .mailgen-section1__highlights1.layout2 {
   position: absolute;
-  top: 46px;
+  top: 40px;
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
@@ -88,7 +88,7 @@
   left: 0px;
   right: 0px;
   width: 2.08%;
-  margin: 0px 64.11% 0px 33.8%;
+  margin: 0px 64.11% 0px 27.8%;
   text-decoration: none;
 }
 
@@ -164,7 +164,7 @@
   height: -moz-min-content;
   height: min-content;
   width: 68.78%;
-  margin: 0px 58.44% 0px 20.78%; 
+  margin: -75px 58.44% 0px 20.78%; 
 }
 
 .mailgen-section1__hero-title {
@@ -188,14 +188,12 @@
   margin: 10px 0 0 20.52%;
 }
 
-#mc-embedded-subscribe{
-  
-}
-
 .mailgen-section1__highlights4 {
   font: 700 16px/1.2 "Poppins", Helvetica, Arial, serif;
   color: white;
-  letter-spacing: 0px; 
+  letter-spacing: 0px;
+  margin-top: 15px;
+  margin-left: 9px;
 }
 
 .mailgen-section1__highlights4.layout {
@@ -248,10 +246,303 @@
 
 /* ========================= END Hero Section ========================= */
 
+/*========================= START Features Section =========================*/
+
+.mailgen-features{
+ margin-top: 50px; 
+}
+.mailgen-features-title{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font: 30px/1.2 "Poppins", Helvetica, Arial, serif;
+  color: #18202c;
+  letter-spacing: 2px;
+}
+.mailgen-features-block{
+  display: flex;
+  justify-content: center;
+}
+.mailgen-feature-card{
+  margin: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247059);
+  border-radius: 32px 32px 32px 32px;
+  width: 20%;
+}
+
+.mailgen-feature-caption{
+  font: 17px/1.2 "Poppins", Helvetica, Arial, serif;
+  color: #18202c;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.75px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 10px auto auto;
+}
+
+.mailgen-feature-description{
+  font: 17px/1.2 "Poppins", Helvetica, Arial, serif;
+  color: #18202c;
+  text-align: center;
+  letter-spacing: 0.85px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 74.53%;
+  margin: 26px auto 59px;
+}
+
+.mailgen-block3.layout {
+  position: relative;
+  overflow: hidden;
+  min-height: 414px;
+  flex-shrink: 0; 
+}
+
+.mailgen-content-box3 {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247059);
+  border-radius: 32px 32px 32px 32px; }
+
+.mailgen-content-box3.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 18px 18px 13px 17px; }
+
+.mailgen-icon3 {
+  background: var(--src) center center/contain no-repeat; }
+
+.mailgen-icon3.layout {
+  position: relative;
+  height: 127px;
+  width: 126px;
+  min-width: 126px;
+  margin: 38px auto 0px; }
+
+.mailgen-highlights3 {
+  display: flex;
+  justify-content: center;
+  font: 17px/1.2 "Poppins", Helvetica, Arial, serif;
+  color: #18202c;
+  text-align: center;
+  letter-spacing: 0.85px; }
+
+.mailgen-highlights3.layout {
+  position: relative;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 74.53%;
+  margin: 97px auto 59px; }
+
+/*========================= END Features Section =========================*/
+
+/*========================= START FOOTER =========================*/
+
+.mailgen-footer-block{
+  height: 220px;
+  justify-content: center;
+  background-color: #18202C;
+}
+
+.mailgen-footer-info-company{
+  flex-direction: column;
+}
+
+.mailgen-footer-info{
+  display: flex;
+  position: relative;
+  color: white;
+  font: 15px/1.2 "Poppins", Helvetica, Arial, serif;
+  margin:50px;
+}
+
+.mailgen-footer-info-block{
+  display: flex;
+  justify-content: center;
+}
+
+.mailgen-footer-company-info{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.mailgen-footer-info ul li:first-child{
+  text-decoration: underline;
+  padding-bottom: 15px;
+}
+
+.mailgen-footer-info ul li{
+  padding-bottom: 5px;
+}
+
+.mailgen-footer-info ul li a{
+  padding-bottom: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.mailgen-footer-info ul{
+  justify-content: center;
+}
+
+/*========================= END FOOTER =========================*/
+
+/*========================= START FAQ =========================*/
+
+.faq-block{
+  margin-top: 1%;
+  font: 15px/1.2 "Poppins", Helvetica, Arial, serif;
+}
+
+.faq-questions-block{
+  margin-top: 4%;
+}
+
+.mailgen-page-title{
+  font: 1.5em/1.2 "Poppins", Helvetica, Arial, serif;
+}
+
+.faq-question{
+  font: 1.1em/1.2 "Poppins", Helvetica, Arial, serif;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/*========================= END FAQ =========================*/
+
+/*========================= START PRICING TABLE =========================*/
+.plans{
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+}
+
+.pricing-panel-base{
+  font: 1.2em/1.2 "Poppins", Helvetica, Arial, serif;
+  min-height: 600px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247059);
+}
+
+.pricing-type-box{
+  height: 200px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247059);
+}
+
+.pricing-type-professional{
+  border-radius: 10px 10px 0px 0px;
+  background: #4FC3F7;
+}
+
+.pricing-type-free{
+  border-radius: 10px 10px 0px 0px;
+  background: #81C784;
+}
+
+.pricing-type-header{
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.pricing-type-price{
+  font: 2.5em/1.2 "Poppins", Helvetica, Arial, serif;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.pricing-type-header > span{
+  margin-top: 40px;
+  letter-spacing: 1.5px;
+}
+
+.pricing-type-price > span{
+  margin-top: 20px;
+  letter-spacing: 1.5px;
+}
+
+.pricing-type-features{
+  margin-top: 10%;
+  /*margin-left: 10%;*/
+}
+
+.pricing-type-features p{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font: .9em/1.2 "Poppins", Helvetica, Arial, serif;
+  letter-spacing: 1px;
+  color: #546E7A;
+  margin-left: 10%;
+}
+
+.pricing-type-features span{
+  display: flex;
+  justify-content: center;
+  font: .7em/1.2 "Poppins", Helvetica, Arial, serif;
+  padding-bottom: 15px;
+  color: #78909C;
+}
+
+.pricing-amazon-ses-info-text{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.pricing-amazon-ses-info-text > span{
+  width: 80%;  
+}
+
+.number-of-subscribers{
+  display: flex;
+  justify-content: center;
+  font: .7em/1.2 "Poppins", Helvetica, Arial, serif;
+  padding-bottom: 15px;
+  color: #546E7A;
+}
+
+.number-of-subscribers-input{
+  font: .9em/1.2 "Poppins", Helvetica, Arial, serif;
+  padding-bottom: 15px;
+  color: #546E7A;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247059);
+  outline: none;
+  text-align: center;
+  height: 50px;
+  padding-top: 15px;
+  
+}
+.number-of-subscribers-input-block{
+  display: flex;
+  justify-content: center;
+}
+
+.mailgen-features-list-block{
+  margin-top: 15px;
+}
+
+/*========================= END PRICING TABLE =========================*/
+
 .mailgen-main {
   display: flex;
   flex-direction: column;
-  background-color: white; }
+  background-color: white; 
+}
 
 .mailgen-main.layout {
   position: relative;
