@@ -25,13 +25,13 @@ layout: default
 		const subscribersCount = new Number(e.target.value)
 		const tiers = getTiers()
 		let price = 20
-		debugger
+		
 		for (let i = 0; i < tiers.length - 1; i++){
 			let current = tiers[i];
 			let next = tiers[i + 1];
 			
 			if (subscribersCount > new Number(current.up_to) && subscribersCount <= new Number(next.up_to)){
-				price = tiers[i].flat_amount_decimal
+				price = tiers[i + 1].flat_amount_decimal
 			}
 		}
 		
