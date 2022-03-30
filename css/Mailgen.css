@@ -98,16 +98,19 @@
   margin-top: 2.2%;
 }
 
+.mailgen-brand-name > a {
+  color: #009be5;
+  text-decoration: none;
+}
+
 .mailgen-brand-name{
     position: absolute;
     bottom: 0;
     font: 600 24px/1.2 "Poppins", Helvetica, Arial, serif;
-    color: #009be5;
     letter-spacing: 0px;
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
-    text-decoration: none;
 }
 
 .mailgen-nav-link-block{
