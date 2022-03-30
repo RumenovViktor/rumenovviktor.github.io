@@ -396,8 +396,37 @@
 
 /*========================= END FOOTER =========================*/
 
-/*========================= START FAQ =========================*/
 
+/*========================= START Terms of use =========================*/
+
+.terms-of-use-block{
+  margin-top: 20px;
+  font: 15px/1.2 "Poppins", Helvetica, Arial, serif;
+}
+
+.terms-of-use-block p{
+  margin-top: 20px
+}
+
+.terms-of-use-block h3{
+  margin-top: 20px;
+  font: 24px/1.2 "Poppins", Helvetica, Arial, serif;
+}
+
+.terms-of-use-block h5{
+  margin-top: 20px;
+  text-decoration: underline;
+  font: 18px/1.2 "Poppins", Helvetica, Arial, serif;
+}
+
+.terms-of-use-block ol li{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*========================= END Terms of use =========================*/
+
+/*========================= START FAQ =========================*/
 .faq-block{
   margin-top: 1%;
   font: 15px/1.2 "Poppins", Helvetica, Arial, serif;
