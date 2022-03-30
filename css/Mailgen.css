@@ -11,85 +11,121 @@
   margin-left: auto;
 }
 
-.mailgen-section1__medium-div{
+/*.mailgen-section1__medium-div{*/
+/*  margin-left: 10.6%;*/
+/*  margin-top: 2.2%;*/
+/*  display: inline-block;*/
+/*}*/
+
+/*.mailgen-section1__medium-div1{*/
+/*  margin-top: 2.2%;*/
+/*  display: inline-block;*/
+/* }*/
+
+/*.mailgen-section1__medium-title {*/
+/*  font: 600 24px/1.2 "Poppins", Helvetica, Arial, serif;*/
+/*  color: #009be5;*/
+/*  letter-spacing: 0px;*/
+/*}*/
+
+/*.mailgen-section1__medium-title.layout {*/
+/*  height: -webkit-min-content;*/
+/*  height: -moz-min-content;*/
+/*  height: min-content;*/
+/*  bottom: 834px;*/
+/*  left: 0px;*/
+/*  right: 0px;*/
+/*  text-decoration: none;*/
+/*}*/
+
+/*.mailgen-section1__highlights1 {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  font: 18px/1.2 "Poppins", Helvetica, Arial, serif;*/
+/*  color: #18202c;*/
+/*  text-align: center;*/
+/*  letter-spacing: 0px;*/
+/*  text-decoration: none;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*.mailgen-section1__highlights1.layout {*/
+/*  position: absolute;*/
+/*  top: 40px;*/
+/*  height: -webkit-min-content;*/
+/*  height: -moz-min-content;*/
+/*  height: min-content;*/
+/*  bottom: 836px;*/
+/*  left: 0px;*/
+/*  right: 0px;*/
+/*  width: 2.76%;*/
+/*  margin: 0px 76.69% 0px 20.55%;*/
+/*  text-decoration: none;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*.mailgen-section1__highlights1.layout1 {*/
+/*  position: absolute;*/
+/*  top: 40px;*/
+/*  height: -webkit-min-content;*/
+/*  height: -moz-min-content;*/
+/*  height: min-content;*/
+/*  bottom: 836px;*/
+/*  left: 0px;*/
+/*  right: 0px;*/
+/*  width: 3.44%;*/
+/*  margin: 0px 69.71% 0px 21.85%;*/
+/*  text-decoration: none;*/
+/*}*/
+
+/*.mailgen-section1__highlights1.layout2 {*/
+/*  position: absolute;*/
+/*  top: 40px;*/
+/*  height: -webkit-min-content;*/
+/*  height: -moz-min-content;*/
+/*  height: min-content;*/
+/*  bottom: 836px;*/
+/*  left: 0px;*/
+/*  right: 0px;*/
+/*  width: 2.08%;*/
+/*  margin: 0px 64.11% 0px 27.8%;*/
+/*  text-decoration: none;*/
+/*}*/
+
+.mailgen-brand-name-block{
+  position: relative;
   margin-left: 10.6%;
   margin-top: 2.2%;
+}
+
+.mailgen-brand-name{
+    position: absolute;
+    bottom: 0;
+    font: 600 24px/1.2 "Poppins", Helvetica, Arial, serif;
+    color: #009be5;
+    letter-spacing: 0px;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    text-decoration: none;
+}
+
+.mailgen-nav-link-block{
+  position: relative;
+  margin-left: 10%;
+}
+
+.mailgen-nav-link-wrap{
   display: inline-block;
+  width: 100px;
 }
 
-.mailgen-section1__medium-div1{
-  margin-top: 2.2%;
-  display: inline-block;
- }
-
-.mailgen-section1__medium-title {
-  font: 600 24px/1.2 "Poppins", Helvetica, Arial, serif;
-  color: #009be5;
-  letter-spacing: 0px;
-}
-
-.mailgen-section1__medium-title.layout {
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  bottom: 834px;
-  left: 0px;
-  right: 0px;
-  text-decoration: none;
-}
-
-.mailgen-section1__highlights1 {
-  display: flex;
-  justify-content: center;
+.mailgen-nav-link{
+  position: absolute;
+  bottom: 0;
   font: 18px/1.2 "Poppins", Helvetica, Arial, serif;
-  color: #18202c;
-  text-align: center;
-  letter-spacing: 0px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.mailgen-section1__highlights1.layout {
-  position: absolute;
-  top: 40px;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  bottom: 836px;
-  left: 0px;
-  right: 0px;
-  width: 2.76%;
-  margin: 0px 76.69% 0px 20.55%;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.mailgen-section1__highlights1.layout1 {
-  position: absolute;
-  top: 40px;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  bottom: 836px;
-  left: 0px;
-  right: 0px;
-  width: 3.44%;
-  margin: 0px 69.71% 0px 21.85%;
-  text-decoration: none;
-}
-
-.mailgen-section1__highlights1.layout2 {
-  position: absolute;
-  top: 40px;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-  bottom: 836px;
-  left: 0px;
-  right: 0px;
-  width: 2.08%;
-  margin: 0px 64.11% 0px 27.8%;
-  text-decoration: none;
+    color: #18202c;
+    text-decoration: none;
 }
 
 .mailgen-section1__block1 {
@@ -247,9 +283,11 @@
 /* ========================= END Hero Section ========================= */
 
 /*========================= START Features Section =========================*/
-
+.mailgen-features-block.bottom{
+  padding-bottom: 2%;
+}
 .mailgen-features{
- margin-top: 50px; 
+ margin-top: 10%; 
 }
 .mailgen-features-title{
   display: flex;
