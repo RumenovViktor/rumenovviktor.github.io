@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="">
 	<section class="page">
-		<div class="container {% if page.full_width %}max-container{% endif %}">
+<!--		<div>-->
 			{% if page.heading %}
 				<h2>{{ page.heading }}</h2>
 			{% elsif page.title and page.layout != 'archive' %}
@@ -15,30 +15,9 @@ layout: default
 				</div>
 			{% endif %}
 			{{ content }}
-		</div>
+<!--		</div>-->
 	</section>
 </div>
-<footer class="mailgen-footer-block-page">
-	<div class="mailgen-footer-info-block">
-		<div class="mailgen-footer-info">
-			<ul>
-				<li>Legal:</li>
-				<li><a href="{{ site.baseurl }}/terms">Terms Of Use</a></li>
-				<li><a href="{{ site.baseurl }}/privacy">Privacy Policy</a></li>
-			</ul>
-		</div>
-		<div class="mailgen-footer-info">
-			<ul>
-				<li class="footer-info-title">General:</li>
-				<li><a href="{{ site.baseurl }}/pricing">Pricing</a></li>
-				<li><a href="{{ site.baseurl }}/faq">FAQ</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="mailgen-footer-company-info">
-		<span>Powered by © 2022 Omega 23 Ltd. </span>
-	</div>
-</footer>
 <script type="application/javascript">
 	let el = document.getElementById('number-of-subscribers-input')
 	const tiers = getTiers()

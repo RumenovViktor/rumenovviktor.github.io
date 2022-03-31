@@ -393,18 +393,17 @@
   width: 100%;
   justify-content: center;
   background-color: #18202C;
-  /*position:absolute;*/
-  /*bottom:-200px;*/
-  /*width:100%;*/
-  /*height:204px;*/
-  /*background-color: #18202C;*/
+}
+
+.mailgen-footer-block-faq{
+  width:100%;
+  margin-top:15%;
+  background-color: #18202C;
 }
 
 .mailgen-footer-block-page{
-  position:absolute;
-  bottom:-200px;
   width:100%;
-  height:204px;
+  margin-top: 3%;
   background-color: #18202C;
 }
 
@@ -502,6 +501,7 @@
 
 .mailgen-page-title{
   font: 1.5em/1.2 "Poppins", Helvetica, Arial, serif;
+  text-align: center;
 }
 
 .faq-question{
