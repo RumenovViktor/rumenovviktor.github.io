@@ -440,32 +440,40 @@
 
 /*========================= START Terms of use =========================*/
 
-.terms-of-use-block{
+.terms-of-use-block, .mailgen-privacy-block{
   margin-top: 20px;
   font: 15px/1.2 "Poppins", Helvetica, Arial, serif;
 }
 
-.terms-of-use-block p{
+.terms-of-use-block p, .mailgen-privacy-block p{
   margin-top: 20px
 }
 
-.terms-of-use-block h3{
+.terms-of-use-block h3, .mailgen-privacy-block h3{
   margin-top: 20px;
   font: 24px/1.2 "Poppins", Helvetica, Arial, serif;
 }
 
-.terms-of-use-block h5{
+.terms-of-use-block h5, .mailgen-privacy-block h5{
   margin-top: 20px;
   text-decoration: underline;
   font: 18px/1.2 "Poppins", Helvetica, Arial, serif;
 }
 
-.terms-of-use-block ol li{
+.terms-of-use-block ol li, .mailgen-privacy-block ol li{
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 /*========================= END Terms of use =========================*/
+
+/*========================= START Privacy Policy =========================*/
+.mailgen-privacy-block{
+  margin-top: 20px;
+  font: 15px/1.2 "Poppins", Helvetica, Arial, serif;
+}
+
+/*========================= END Privacy Policy =========================*/
 
 /*========================= START FAQ =========================*/
 .faq-block{
