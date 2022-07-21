@@ -220,19 +220,57 @@
   margin: 10px 0 0 20.52%; 
 }
 
-#mc_embed_signup {
-  font: 600 50px/1.31 "Poppins", Helvetica, Arial, serif;
+#mc_embed_signup2 {
+  font: 14px "Poppins", Helvetica, Arial, serif;
   color: #18202c;
   letter-spacing: 0px;
-  margin: 10px 0 0 20.52%;
+  margin: 40px 0 0 20%;
+}
+
+#mc_embed_signup{
+  font: 14px "Poppins", Helvetica, Arial, serif;
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-newsletter-text{
+  font-size: 23px;
 }
 
 .mailgen-section1__highlights4 {
   font: 700 16px/1.2 "Poppins", Helvetica, Arial, serif;
   color: white;
   letter-spacing: 0px;
-  margin-top: 15px;
-  margin-left: 9px;
+}
+
+.mailgen-section1__highlights42 {
+  font: 700 16px/1.2 "Poppins", Helvetica, Arial, serif;
+  color: white;
+  letter-spacing: 0px;
+  left: 10px;
+  position: absolute;
+  top: 27%;
+}
+
+#mc_embed_signup_scroll{
+  display: flex;
+}
+
+#subscribe-section{
+  padding-bottom: 100px;
+  background-color: #ECEFF1;
+}
+
+.optionalParent{
+  position: relative;
+}
+
+.custom-shape-divider-top-1658410887 {
+  /*top: 0;*/
+  /*left: 0;*/
+  /*width: 100%;*/
+  /*overflow: hidden;*/
+  /*line-height: 0;*/
 }
 
 .mailgen-section1__highlights4.layout {
@@ -247,15 +285,15 @@
   margin: 16px 0px 0px 25px; }
 
 .mailgen-section1__block2 {
-  display: flex;
   flex-direction: column;
   font: 700 12px/1.2 "Poppins", Helvetica, Arial, serif;
   background-color: #18202c;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247059);
   border-radius: 14px 14px 14px 14px; 
   color: white;
-  padding: 10px 30px 10px 30px;
+  padding: 15px 40px 15px 40px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .mailgen-section1__block2.layout {
@@ -290,7 +328,7 @@
   padding-bottom: 2%;
 }
 .mailgen-features{
- margin-top: 10%; 
+ margin-top: 13%; 
 }
 .mailgen-features-title{
   display: flex;
@@ -299,6 +337,7 @@
   font: 30px/1.2 "Poppins", Helvetica, Arial, serif;
   color: #18202c;
   letter-spacing: 2px;
+  margin-top: 50px;
 }
 .mailgen-features-block{
   display: flex;
@@ -522,7 +561,7 @@
 
 .pricing-panel-base{
   font: 1.2em/1.2 "Poppins", Helvetica, Arial, serif;
-  min-height: 600px;
+  min-height: 700px;
   width: 400px;
   border-radius: 20px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247059);
@@ -1835,3 +1874,71 @@
   height: -moz-min-content;
   height: min-content;
   margin: 16px 0px 0px 0.5px; }
+
+.get-started-now-container{
+  position: absolute;
+  bottom: 110px;
+  margin-left: 100px;
+}
+
+.get-started-now-btn {
+  font: 15px/1.2 "Poppins", Helvetica, Arial, serif;
+  color: white;
+  letter-spacing: 0px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247059);
+  border-radius: 19.5px 19.5px 19.5px 19.5px;
+  background-color: #009be5;
+  cursor: pointer;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+}
+
+
+.custom-shape-divider-bottom-1658412906 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1658412906 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 61px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1658412906 .shape-fill {
+  fill: #ECEFF1;
+}
+
+
+
+
+
+.custom-shape-divider-top-1658413093 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1658413093 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 78px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1658413093 .shape-fill {
+  fill: #ECEFF1;
+}
